@@ -1,16 +1,8 @@
 package com.company;
 
 public class Animal {
-    private String name;
-    private String breed;
+    private String name, breed, kindOfAnimal;
     private int age;
-
-    //конструктор
-    Animal (String n, String b, int a) {
-        name = n;
-        breed = b;
-        age = a;
-    }
 
     public int getAge() {
         return age;
@@ -21,14 +13,18 @@ public class Animal {
     public String getBreed() {
         return breed;
     }
-    //методы set не понадобились, писала, чтобы не забывать)
-    public void setAge() {
+    public String getKindOfAnimal() {
+        return kindOfAnimal;
+    }
+
+    public void setAge(int age) {
         this.age = age;
     }
-    public void setName () {
+    public void setName (String name) {
         this.name = name;
     }
-    public void setBreed () {
+    public void setBreed (String breed) {
         this.breed = breed;
     }
+    public void setKindOfAnimal (String kindOfAnimal) { this.kindOfAnimal = kindOfAnimal; }
 }

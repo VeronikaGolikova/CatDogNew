@@ -3,10 +3,21 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-       Speakable [] speakable = new Speakable [] {(new Cat ("Harold", "Персидский", 3, "Кот")),(new Dog ("Шарик", "-", 5, "Собака"))};
-       speakable[0].show();
-	   speakable[0].speak();
-	   speakable[1].show();
-	   speakable[1].speak();
+       Cat newcat = new Cat();
+       newcat.setAge(2);
+       newcat.setName("Harold");
+       newcat.setBreed("Персидский");
+       newcat.setKindOfAnimal("Кот");
+
+       Dog newdog = new Dog();
+        newdog.setAge(5);
+        newdog.setName("Шарик");
+        newdog.setBreed("безпородный");
+        newdog.setKindOfAnimal("Пес");
+
+        newcat.show();
+        newcat.speak();
+        newdog.show();
+        newdog.speak();
     }
 }
